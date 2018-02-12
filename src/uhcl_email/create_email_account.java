@@ -50,7 +50,7 @@ public class create_email_account {
            statement=connection.createStatement();
            resultset=statement.executeQuery("select * from email_account where email='"+email_id+"'");
            if(resultset.next()){
-               System.out.println("error in creation");
+               System.out.println("error in creation of account");
            }
            else{
                 
